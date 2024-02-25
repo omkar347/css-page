@@ -1,38 +1,423 @@
+@import url('./Gilroy.css');
+:root {
+  --clr-green-100: #008B5D;
+  --clr-white-100: #FFFFFF;
+  --clr-black-100: #A1A1A5;
+  --clr-black-200: #595964;
+  --clr-black-300: #4C4C55;
+  --clr-black-400: #14141F;
+  --clr-blue-100: #1688FE;
+  --clr-blue-200: #1688FE;
+  --clr-red-100: #F25773;
+
+  --ff-semibold: 'Gilroy-SemiBold, sans-serif';
+  --ff-medium: 'Gilroy-Medium, sans-serif';
+  --ff-regular: 'Gilroy-Regular, sans-serif';
+
+  --fs-11: 11px;
+  --fs-13: 13px;
+  --fs-14: 14px;
+  --fs-15: 15px;
+  --fs-17: 17px;
+  --fs-24: 24px;
+
+  --fs-regular: var(--fs-15);
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility Classes */
+.fs-x-small {
+  font-size: var(--fs-11);
+}
+
+.fs-small {
+  font-size: var(--fs-13);
+}
+
+.fs-medium {
+  font-size: var(--fs-14);
+}
+
+.fs-regular {
+  font-size: var(--fs-15);
+}
+
+.fs-large {
+  font-size: var(--fs-17);
+}
+
+.fs-x-large {
+  font-size: var(--fs-24);
+}
+
 .App {
+  height: 100vh;
+}
+
+.App .wrapper {
+  display: grid;
+  grid-template-rows: 148px auto auto auto;
+  gap: 32px;
+  padding: 32px 0;
+  margin-left: 240px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, '16px');
+}
+
+.container {
+  width: 800px;
+  margin-inline: auto;
+}
+
+.pm-container {
+  padding: 24px;
+  border-radius: 8px;
+  background-color: var(--clr-green-100);
+  color: var(--clr-white-100);
+}
+
+.even-columns {
+  display: grid;
+  gap: var(--gap, 1rem);
+  grid-auto-flow: column;
+  grid-template-columns: var(--data-grid-template-columns, 1fr);
+}
+
+.even-columns[data-grid-template-columns] {
+  grid-template-columns: 50%;
+}
+
+.pm-logo {
+  padding: 12px;
+  border-radius: 1000px;
+  gap: 10px;
+}
+
+.form-profile-pic>img {
+  max-width: 144px;
+  height: 144px;
+}
+
+.pm-logo>img {
+  max-width: 72px;
+  height: 72px;
+}
+
+body {
+  font-size: var(--fs-regular);
+  font-family: var(--ff-medium);
+  color: var(--clr-black-400);
+}
+
+.form-title {
+  font-family: var(--ff-semibold);
+  font-size: var(--fs-24);
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* */
+.form-control {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  vertical-align: top;
+}
+
+.form-label {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: var(--ff-semibold);
+  font-size: var(--fs-11);
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  letter-spacing: 0.00938em;
+  padding: 0px;
+  display: block;
+  transform-origin: left top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(133% - 32px);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translate(14px, -9px) scale(0.75);
+  transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, max-width 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  z-index: 1;
+  pointer-events: auto;
+  user-select: none;
+  background-color: var(--clr-white-100);
+}
+
+.form-input {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.87);
+  box-sizing: border-box;
+  cursor: text;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+}
+
+.form-input>input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentcolor;
+  border: 0px;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0px;
+  width: 100%;
+  animation-name: mui-auto-fill-cancel;
+  animation-duration: 10ms;
+  padding: 16.5px 14px;
+}
+
+.form-outline {
+  text-align: left;
+  position: absolute;
+  inset: 0px 0px 0px;
+  margin: 0px;
+  padding: 0px 8px;
+  pointer-events: none;
+  border-radius: inherit;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  min-width: 0%;
+  border-color: rgba(0, 0, 0, 0.23);
+  color: transparent;
+}
+
+.form-outline>legend {
+  text-align: left;
+  position: absolute;
+  inset: -5px 0px 0px;
+  margin: 0px;
+  padding: 0px 8px;
+  pointer-events: none;
+  border-radius: inherit;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  min-width: 0%;
+  border-color: rgba(0, 0, 0, 0.23);
+  padding: 8px 12px 8px 12px;
+  border-radius: 4px;
+  border: 1px;
+  gap: 12px;
+
+}
+
+.terms-text {
+  font-size: var(--fs-regular);
+  font-family: var(--ff-medium);
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.terms-text>em {
+  color: var(--clr-blue-100);
+}
+
+
+
+.btn-save {
+  width: 170px;
+  height: 40px;
+  padding: 16px;
+  border-radius: 4px;
+  gap: 4px;
+  background-color: var(--clr-blue-200);
+  color: var(--clr-white-100);
+  line-height: 0.5;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/**/
+
+
+.terms-checkbox-text {
+  font-size: var(--fs-13);
+  font-family: var(--ff-medium);
+  line-height: 20px;
+  display: flex;
+  gap: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.terms-checkbox-text>em {
+  color: var(--clr-blue-100);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dlt-description {
+  padding: 16px;
+  border-radius: 8px;
+  border: solid 1px #E3E3E4;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+.dlt-description-title {
+  font-family: var(--ff-semibold);
+  font-size: var(--fs-17);
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.dlt-description-footer {
+  font-family: var(--ff-semibold);
+  font-size: var(--fs-regular);
+  color: var(--clr-red-100);
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.hr-line {
+  border: 1px solid #E3E3E4
+}
+
+nav.even-columns>span {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-14);
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+/* */
+.App aside {
+  border-right: 1px solid #ECECED;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+  width: 240px;
+  overflow: hidden;
+}
+
+.nav-wrapper {
+  padding: 8px 4px 8px 4px;
+  gap: 2px;
+  height: calc(100vh - 100px);
+  overflow: auto;
+  width: 250px;
+}
+
+.nav-wrapper .even-columns {
+  padding: 6px 4px 6px 4px;
+  border-radius: 8px;
+}
+
+
+.ft-contaiiner {
+  display: flex;
+  padding: 16px;
+  border: 1px, 0px, 0px, 0px;
+  justify-content: space-between;
+  border-top: 1px solid #ECECED
+}
+
+.ft-contaiiner>.nav-logo {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 12px;
 }
