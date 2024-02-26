@@ -6,125 +6,125 @@ function App() {
       <aside className='flex-column'>
         <header>
           <div className='nav-logo'>
-            <img src='/img/nav-logo.png' alt='logo' />
+            <img src='/css-page/img/nav-logo.png' alt='logo' />
           </div>
         </header>
         <nav className='nav-wrapper'>
           <section id="widget_1">
             <div className="even-columns" style={{ '--gap': '4px', '--data-grid-template-columns': '16px auto 16px' }}>
-              <span className='nav-pre-icon' style={{ background: 'url(/img/doc.png) no-repeat 0' }}></span>
+              <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/doc.png) no-repeat 0' }}></span>
               <span className='nav-text'>My template</span>
               <span className='nav-post-icon' ></span>
             </div>
           </section>
           <section id="widget_2">
             <div className="even-columns" style={{ '--gap': '4px', '--data-grid-template-columns': '16px auto 16px' }}>
-              <span className='nav-pre-icon' style={{ background: 'url(/img/search.png) no-repeat 0' }}></span>
+              <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/search.png) no-repeat 0' }}></span>
               <span className='nav-text'>Search</span>
               <span className='nav-post-icon'></span>
             </div>
             <ul>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Software Engineer</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Computer hardware engineer</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Network Engineer</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Technical Support</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Personal Information</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Network administrator</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Management</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Data analysis</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/star.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/star.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Computer technician</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/clock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/clock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Past clock 1</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/clock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/clock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Past clock 2</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/clock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/clock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Computers and information...</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/clock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/clock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Database Administrator</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/clock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/clock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Computer security</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/clock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/clock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Computer Systems Analyst</span>
                   <span className='nav-post-icon'></span>
                 </div>
@@ -134,28 +134,28 @@ function App() {
           <section id="widget_3">
 
             <div className="even-columns" style={{ '--gap': '4px', '--data-grid-template-columns': '16px auto 16px' }}>
-              <span className='nav-pre-icon' style={{ background: 'url(/img/board.png) no-repeat 0' }}></span>
+              <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/board.png) no-repeat 0' }}></span>
               <span className='nav-text'>My boards</span>
-              <span className='nav-post-icon' style={{ background: 'url(/img/union.png) no-repeat 0' }}></span>
+              <span className='nav-post-icon' style={{ background: 'url(/css-page/img/union.png) no-repeat 0' }}></span>
             </div>
             <ul>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/folder.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/folder.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Board 1</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/folder.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/folder.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Board 2</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/folder.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/folder.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Board 3</span>
                   <span className='nav-post-icon'></span>
                 </div>
@@ -163,21 +163,21 @@ function App() {
 
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/lock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/lock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Software Engineer</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/lock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/lock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Software Engineer</span>
                   <span className='nav-post-icon'></span>
                 </div>
               </li>
               <li>
                 <div className="even-columns" style={{ '--gap': '6px', '--data-grid-template-columns': '16px auto 16px' }}>
-                  <span className='nav-pre-icon' style={{ background: 'url(/img/lock.png) no-repeat 0' }}></span>
+                  <span className='nav-pre-icon' style={{ background: 'url(/css-page/img/lock.png) no-repeat 0' }}></span>
                   <span className='nav-text'>Software Engineer</span>
                   <span className='nav-post-icon'></span>
                 </div>
@@ -189,13 +189,13 @@ function App() {
         <footer>
           <div className='ft-contaiiner'>
             <div className='nav-logo'>
-              <img src='/img/img.png' alt='profile pic' />
+              <img src='/css-page/img/img.png' alt='profile pic' />
               <div className='terms-checkbox-text'>
                 Carla
               </div>
             </div>
             <div className='st-logo'>
-              <img src='/img/settings.png' alt='settings' />
+              <img src='/css-page/img/settings.png' alt='settings' />
             </div>
           </div>
         </footer>
@@ -205,7 +205,7 @@ function App() {
           <div className='flex-column container pm-container' style={{ '--gap': '16px' }}>
             <div className='even-columns'>
               <div className='pm-logo'>
-                <img src='/img/pm-logo.png' alt='pm-logo' />
+                <img src='/css-page/img/pm-logo.png' alt='pm-logo' />
               </div>
               <div className='pm-description'>
                 <div className='pm-description-title'>
@@ -335,7 +335,7 @@ function App() {
               </div>
 
               <div className='form-profile-pic'>
-                <img src='/img/profile.png' alt='profile' />
+                <img src='/css-page/img/profile.png' alt='profile' />
               </div>
 
             </div>

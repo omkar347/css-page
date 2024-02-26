@@ -1,4 +1,4 @@
-@import url('./Gilroy.css');
+
 :root {
   --clr-green-100: #008B5D;
   --clr-white-100: #FFFFFF;
@@ -10,9 +10,9 @@
   --clr-blue-200: #1688FE;
   --clr-red-100: #F25773;
 
-  --ff-semibold: 'Gilroy-SemiBold, sans-serif';
-  --ff-medium: 'Gilroy-Medium, sans-serif';
-  --ff-regular: 'Gilroy-Regular, sans-serif';
+  --ff-semibold: 'Gilroy-SemiBold', sans-serif;
+  --ff-medium: 'Gilroy-Medium', sans-serif;
+  --ff-regular: 'Gilroy-Regular', sans-serif;
 
   --fs-11: 11px;
   --fs-13: 13px;
